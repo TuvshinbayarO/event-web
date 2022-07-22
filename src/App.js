@@ -108,7 +108,7 @@ function App() {
               </div>
               <div className="pt-5 flex flex-col justify-center items-center">
                 {/* <h1 className="text-3xl font-bold text-white cursor-pointer hover:opacity-70 transition-all duration-300">Газрын зураг</h1> */}
-                <div className="pt-5">
+                {/* <div className="pt-5">
                   <a id="down">
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
@@ -117,7 +117,7 @@ function App() {
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
