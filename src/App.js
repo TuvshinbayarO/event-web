@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Logo from "./Assets/festival.png";
 import Photo from "./Assets/photo.jpg";
 import Typewriter from "typewriter-effect";
-import Header from "./components/Header";
+import Hamburger from "./components/Hamburger";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -68,7 +68,7 @@ function App() {
         </div>
       ) : (
         <>
-          <Header />
+          <Hamburger />
           <div className="h-full"></div>
         </>
       )}
