@@ -89,7 +89,7 @@ function App() {
                     <span><i></i>l</span>
                   </h2>
                 </a> */}
-                <div className=" text-red-500 flex justify-center items-center text-center pt-32 space-x-10 text-xl sm:text-4xl font-bold ">
+                <div className=" text-red-500 flex justify-center items-center text-center sm:pt-32 space-x-5 sm:space-x-10 text-2xl sm:text-4xl font-bold ">
                     <section><p>{timerDays}</p> <small>Day</small></section>
                     
                     <section><p>{timerHours}</p><small>Hours</small></section>
@@ -97,7 +97,7 @@ function App() {
                     <section><p>{timerMinutes}</p><small>Minutes</small></section>
                     
                     <section><p>{timerSeconds}</p><small>Seconds</small></section>
-                  </div>
+                </div>
                 <div className="block sm:hidden">
                   <a className="flex justify-center items-center" href="#down">
                     <h1 className="text-red-500 font-bold text-5xl text-center pt-96">Mobi Festival 2022</h1>
