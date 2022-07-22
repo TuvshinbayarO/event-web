@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-// import Logo from './Assets/festival.png'
+import Logo from './Assets/festival.png'
 import Photo from './Assets/photo.jpg'
 import Typewriter from "./Component/Typewriter";
 
@@ -18,12 +18,12 @@ function App() {
   return (
     <div className="h-full w-full">
       {
-        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-white"><Typewriter text={'Moobi Festival'} /></h1></div>) : (
-          <div className="container mx-auto h-full">
-            <div className="flex flex-col justify-center items-center h-full pt-20">
-              <div className="p-5 flex flex-col justify-center items-center h-screen">
+        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-white text-center"><Typewriter text={'Weelcome Mobi Festival'} /></h1></div>) : (
+          <div className="h-full">
+            <div className="flex flex-col justify-center items-center h-full pt-0 sm:pt-0">
+              <div className="p-5 flex flex-col justify-center items-center h-screen w-full" style={{ backgroundImage: `url(${Logo})` , backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', WebkitBackgroundSize: 'cover', MozBackgroundSize: 'cover', overflow:'hidden' }}>
                 <a href="#down">
-                  <h2 className=" text-[65px] font-bold">
+                  <h2 className=" text-[65px] font-bold sm:block hidden">
                     <span><i></i>W</span>
                     <span><i></i>e</span>
                     <span><i></i>l</span>
@@ -47,9 +47,11 @@ function App() {
                     <span><i></i>l</span>
                   </h2>
                 </a>
-                {/* <a className="flex justify-center items-center" href="#down">
-                  <img className="cursor-pointer w-full sm:w-[50%] rounded-lg hover:opacity-90" src={Logo}  alt="Logo" />
-                </a> */}
+                <div className="block sm:hidden">
+                  <a className="flex justify-center items-center" href="#down">
+                    <h1 className="text-red-500 font-bold text-5xl text-center pt-96">Mobi Festival 2022</h1>
+                  </a>
+                </div>
               </div>
               <div className="pt-5 flex flex-col justify-center items-center">
                 {/* <h1 className="text-3xl font-bold text-white cursor-pointer hover:opacity-70 transition-all duration-300">Газрын зураг</h1> */}

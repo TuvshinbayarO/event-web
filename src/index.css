@@ -2,11 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(./Assets/RampartOne-Regular.ttf);
+  font-weight: bold;
+}
+
+h1{
+  font-family: myFirstFont;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: myFirstFont; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(45deg, #ff0057, #2196f3);
@@ -16,7 +24,7 @@ h2{
   position: relative;
   display: flex;
   gap: 5px;
-  color: #fff;
+  color: #ff0057;
   /* font-size: 4em; */
   cursor: pointer;
 }
