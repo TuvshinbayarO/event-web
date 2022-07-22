@@ -47,11 +47,12 @@ function App() {
   }, [])
 
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full block sm:hidden">
       {
-        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-white text-center"><Typewriter
-        onInit={(typewriter) => {
-          typewriter.typeString('Mobi Festival 2022!')
+        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-white text-center">
+          <Typewriter
+            onInit={(typewriter) => {
+            typewriter.typeString('Mobi Festival 2022!')
             .callFunction(() => {
             })
             .pauseFor(1500)
@@ -59,9 +60,9 @@ function App() {
             .callFunction(() => {
             })
             .start();
-        }}
+          }}
       /></h1></div>) : (
-          <div className="block sm:hidden">
+          <div className="">
             
           </div>
         )
