@@ -28,7 +28,7 @@ export default function Hamburger() {
 
       {/* SideBar */}
       <div
-        className={`h-screen w-3/5 bg-white fixed top-0 z-50 p-8 transition-all duration-300 ${
+        className={`h-screen w-4/5 bg-white fixed top-0 z-50 p-8 transition-all duration-300 ${
           show ? "-right-5" : "-right-full transition-all duration-300"
         }`}
       >
