@@ -20,6 +20,10 @@ body {
   background: linear-gradient(45deg, #ff0057, #fff);
 }
 
+section{
+  font-family: myFirstFont;
+}
+
 h2{
   position: relative;
   display: flex;
