@@ -79,7 +79,7 @@ function App() {
                     <span><i></i>l</span>
                   </h2>
                 </a> */}
-                <div className=" text-red-500 flex justify-center items-center text-center pt-32 space-x-10 text-4xl font-bold">
+                <div className=" text-red-500 flex justify-center items-center text-center pt-32 space-x-10 text-xl sm:text-4xl font-bold ">
                     <section><p>{timerDays}</p> <small>Day</small></section>
                     
                     <section><p>{timerHours}</p><small>Hours</small></section>
