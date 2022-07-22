@@ -22,7 +22,7 @@ export default function Hamburger() {
   ];
 
   return (
-    <div className="flex justify-between p-6">
+    <div className="flex justify-between p-6 bg-gray-600">
       <Logo size={"98px"} />
       <Button type="open" show={show} handleShow={handleShow} />
 

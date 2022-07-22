@@ -9,7 +9,7 @@ export default function Button(props) {
       onClick={handleShow}
     >
       {type === "open" ? (
-        <FaAlignJustify size={24} />
+        <FaAlignJustify size={24} color="#fff" />
       ) : (
         <FaWindowClose size={24} />
       )}

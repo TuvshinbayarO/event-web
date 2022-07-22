@@ -7,7 +7,7 @@ body {
   /* font-family: myFirstFont; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(45deg, #ff0057, #fff);
+  background: #06062a
 }
 
 code {
