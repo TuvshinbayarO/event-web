@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import Logo from './Assets/festival.png'
 import Photo from './Assets/photo.jpg'
-import Typewriter from "./Component/Typewriter";
+import Typewriter from 'typewriter-effect';
 
 function App() {
 
@@ -49,7 +49,20 @@ function App() {
   return (
     <div className="h-full w-full">
       {
-        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-white text-center"><Typewriter text={'Weelcome Mobi Festival'} /></h1></div>) : (
+        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-white text-center"><Typewriter
+        onInit={(typewriter) => {
+          typewriter.typeString('Mobi Festival 2022!')
+            .callFunction(() => {
+              // console.log('String typed out!');
+            })
+            .pauseFor(1500)
+            .deleteAll()
+            .callFunction(() => {
+              // console.log('All strings were deleted');
+            })
+            .start();
+        }}
+      /></h1></div>) : (
           <div className="h-full">
             <div className="flex flex-col justify-center items-center h-full pt-0 sm:pt-0">
               <div className="p-5 flex flex-col justify-center items-center h-screen w-full" style={{ backgroundImage: `url(${Logo})` , backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', WebkitBackgroundSize: 'cover', MozBackgroundSize: 'cover', overflow:'hidden' }}>
@@ -95,7 +108,7 @@ function App() {
               </div>
               <div className="pt-5 flex flex-col justify-center items-center">
                 {/* <h1 className="text-3xl font-bold text-white cursor-pointer hover:opacity-70 transition-all duration-300">Газрын зураг</h1> */}
-                {/* <div className="pt-5">
+                <div className="pt-5">
                   <a id="down">
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
@@ -104,7 +117,7 @@ function App() {
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
                   </a>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
