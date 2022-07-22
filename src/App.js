@@ -53,19 +53,17 @@ function App() {
         onInit={(typewriter) => {
           typewriter.typeString('Mobi Festival 2022!')
             .callFunction(() => {
-              // console.log('String typed out!');
             })
             .pauseFor(1500)
             .deleteAll()
             .callFunction(() => {
-              // console.log('All strings were deleted');
             })
             .start();
         }}
       /></h1></div>) : (
           <div className="h-full">
             <div className="flex flex-col justify-center items-center h-full pt-0 sm:pt-0">
-              <div className="p-5 flex flex-col justify-center items-center h-screen w-full" style={{ backgroundImage: `url(${Logo})` , backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', WebkitBackgroundSize: 'cover', MozBackgroundSize: 'cover', overflow:'hidden' }}>
+              <div className="flex flex-col justify-center items-center h-screen w-full" style={{ backgroundImage: `url(${Logo})` , backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', WebkitBackgroundSize: 'cover', MozBackgroundSize: 'cover', overflow:'hidden' }}>
                 {/* <a href="#down" className=" pt-28">
                   <h2 className=" text-[65px] font-bold sm:block hidden">
                     <span><i></i>W</span>
@@ -106,7 +104,7 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="pt-5 flex flex-col justify-center items-center">
+              {/* <div className="pt-5 flex flex-col justify-center items-center"> */}
                 {/* <h1 className="text-3xl font-bold text-white cursor-pointer hover:opacity-70 transition-all duration-300">Газрын зураг</h1> */}
                 {/* <div className="pt-5">
                   <a id="down">
@@ -118,7 +116,7 @@ function App() {
                     <img className="h-screen sm:h-full" src={Photo} alt="Map" />
                   </a>
                 </div> */}
-              </div>
+              {/* </div> */}
             </div>
           </div>
         )
