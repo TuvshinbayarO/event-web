@@ -2,16 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(./Assets/RampartOne-Regular.ttf);
-  font-weight: bold;
-}
-
-h1{
-  font-family: myFirstFont;
-}
-
 body {
   margin: 0;
   /* font-family: myFirstFont; */
@@ -19,41 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(45deg, #ff0057, #fff);
 }
-
-section{
-  font-family: myFirstFont;
-}
-
-h2{
-  position: relative;
-  display: flex;
-  gap: 5px;
-  color: #ff0057;
-  /* font-size: 4em; */
-  cursor: pointer;
-  font-family: myFirstFont;
-}
-
-h2 span{
-  position: relative;
-  filter: blur(5px);
-  padding: 0 5px;
-  transition: 0.5s;
-}
-
-h2 span:hover{
-  filter: blur(0px);
-  transition: 0;
-}
-
-h2 span i{
-  position: absolute;
-  inset: 0;
-  background: #f00;
-  background: transparent;
-}
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
