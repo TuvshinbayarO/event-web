@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="h-full w-full">
       {
-        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-red-500"><Typewriter text={'Moobi Festival'} /></h1></div>) : (
+        loading ? (<div className="h-screen flex justify-center items-center"><h1 className="font-bold text-5xl text-white"><Typewriter text={'Moobi Festival'} /></h1></div>) : (
           <div className="container mx-auto h-full">
             <div className="flex flex-col justify-center items-center h-full pt-20">
               <div className="p-5 flex flex-col justify-center items-center h-screen">
