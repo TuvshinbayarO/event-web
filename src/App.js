@@ -69,40 +69,7 @@ function App() {
       ) : (
         <>
           <Header />
-          <div className="h-full">
-            <div className="flex flex-col justify-center items-center h-full pt-0 sm:pt-0">
-              <div
-                className="flex flex-col justify-center items-center h-screen w-full"
-                style={{
-                  backgroundImage: `url(${Logo})`,
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  WebkitBackgroundSize: "cover",
-                  MozBackgroundSize: "cover",
-                  overflow: "hidden",
-                }}
-              >
-                <div className=" text-red-500 flex justify-center items-center text-center pt-52 sm:pt-32 space-x-5 sm:space-x-10 text-2xl sm:text-4xl font-bold ">
-                  <section>
-                    <p>{timerDays}</p> <small>Day</small>
-                  </section>
-                  <section>
-                    <p>{timerHours}</p>
-                    <small>Hours</small>
-                  </section>
-                  <section>
-                    <p>{timerMinutes}</p>
-                    <small>Minutes</small>
-                  </section>
-                  <section>
-                    <p>{timerSeconds}</p>
-                    <small>Seconds</small>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="h-full"></div>
         </>
       )}
     </div>
