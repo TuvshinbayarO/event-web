@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-import Logo from './Assets/festival.png'
-import Photo from './Assets/photo.jpg'
+import Land from './Assets/land.png'
 import Typewriter from 'typewriter-effect';
 
 function App() {
@@ -36,10 +35,10 @@ function App() {
   }
 
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 5000)
+    // setLoading(true)
+    // setTimeout(() => {
+    //   setLoading(false)
+    // }, 5000)
     startTimer();
     return () => {
       clearInterval(interval.current)
@@ -62,8 +61,12 @@ function App() {
             .start();
           }}
       /></h1></div>) : (
-          <div className="">
-            
+        // Section 1 Start
+          <div className="" style={{ backgroundImage: `url(${Land})`, WebkitBackgroundSize: 'cover', MozBackgroundSize: 'cover', OBackgroundSize: 'cover', backgroundSize: 'cover' , backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+            <div className="flex flex-col justify-center items-center h-screen">
+              <h1 className="font-semibold text-2xl text-white">Mobi Festival 2022</h1>
+              <p className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Холбоочдын баяр</p>
+            </div>
           </div>
         )
       }
