@@ -17,7 +17,7 @@ const Festival = () => {
                     <p>Aug</p>
                 </div>                
             </div>
-            <img className='py-5 w-52' src={LandPhoto} />
+            <img alt='photo' className='py-5 w-52' src={LandPhoto} />
             <h1 className='text-white font-bold text-4xl'>Leadership digital</h1>
             <p className='text-gray-400 font-semibold'>Rometheme</p>
             <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>
@@ -30,11 +30,11 @@ const Festival = () => {
                     <p>Aug</p>
                 </div>                
             </div>
-            <img className='py-5 w-52' src={LandPhoto} />
+            <img alt='photo' className='py-5 w-52' src={LandPhoto} />
             <h1 className='text-white font-bold text-4xl'>Leadership digital</h1>
             <p className='text-gray-400 font-semibold'>Rometheme</p>
             <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>
-            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock />09:30Am - 10:30Am</div>
+            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         </div>
         <div className='w-full flex flex-col justify-center items-center pt-14'>
             <div className='bg-red-500 w-[80%] rounded-lg'>
@@ -43,11 +43,11 @@ const Festival = () => {
                     <p>Aug</p>
                 </div>                
             </div>
-            <img className='py-5 w-52' src={LandPhoto} />
+            <img alt='photo' className='py-5 w-52' src={LandPhoto} />
             <h1 className='text-white font-bold text-4xl'>Leadership digital</h1>
             <p className='text-gray-400 font-semibold'>Rometheme</p>
             <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>
-            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock />09:30Am - 10:30Am</div>
+            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         </div>
         <div className='w-full flex flex-col justify-center items-center pt-14'>
             <div className='bg-red-500 w-[80%] rounded-lg'>
@@ -56,11 +56,11 @@ const Festival = () => {
                     <p>Aug</p>
                 </div>                
             </div>
-            <img className='py-5 w-52' src={LandPhoto} />
+            <img alt='photo' className='py-5 w-52' src={LandPhoto} />
             <h1 className='text-white font-bold text-4xl'>Leadership digital</h1>
             <p className='text-gray-400 font-semibold'>Rometheme</p>
             <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>
-            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock />09:30Am - 10:30Am</div>
+            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         </div>
         <div className='w-full flex flex-col justify-center items-center pt-14'>
             <div className='bg-red-500 w-[80%] rounded-lg'>
@@ -69,11 +69,11 @@ const Festival = () => {
                     <p>Aug</p>
                 </div>                
             </div>
-            <img className='py-5 w-52' src={LandPhoto} />
+            <img alt='photo' className='py-5 w-52' src={LandPhoto} />
             <h1 className='text-white font-bold text-4xl'>Leadership digital</h1>
             <p className='text-gray-400 font-semibold'>Rometheme</p>
             <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>
-            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock />09:30Am - 10:30Am</div>
+            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         </div>
         <div className='w-full flex flex-col justify-center items-center pt-14'>
             <div className='bg-red-500 w-[80%] rounded-lg'>
@@ -82,11 +82,11 @@ const Festival = () => {
                     <p>Aug</p>
                 </div>                
             </div>
-            <img className='py-5 w-52' src={LandPhoto} />
+            <img alt='photo' className='py-5 w-52' src={LandPhoto} />
             <h1 className='text-white font-bold text-4xl'>Leadership digital</h1>
             <p className='text-gray-400 font-semibold'>Rometheme</p>
             <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>
-            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock />09:30Am - 10:30Am</div>
+            <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         </div>
     </div>
   )

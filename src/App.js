@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Land from './Assets/land.png'
 import Typewriter from "typewriter-effect";
 import Header from "./components/Header";
-import {FaPlayCircle} from 'react-icons/fa'
 import CountDown from "./components/countDown";
 import Video from "./components/Video";
 import Zone from "./components/Zone";

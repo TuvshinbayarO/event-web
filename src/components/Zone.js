@@ -49,7 +49,7 @@ const Zone = () => {
                     return(
                         <div key={key} className=''>
                             <div className='relative flex justify-center items-center'>
-                                <img src={item.img} />
+                                <img alt='photo' src={item.img} />
                                 <div className='absolute bg-dark w-[80%] -bottom-9 rounded-xl p-5 shadow-lg'>
                                     <h1 className='text-white font-bold text-xl'>{item.tile}</h1>
                                 </div>
