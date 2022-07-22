@@ -17,7 +17,7 @@ body {
   /* font-family: myFirstFont; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(45deg, #ff0057, #2196f3);
+  background: linear-gradient(45deg, #ff0057, #fff);
 }
 
 h2{
@@ -27,6 +27,7 @@ h2{
   color: #ff0057;
   /* font-size: 4em; */
   cursor: pointer;
+  font-family: myFirstFont;
 }
 
 h2 span{
