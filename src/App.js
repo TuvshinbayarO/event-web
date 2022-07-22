@@ -13,14 +13,14 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // setLoading(true)
-    // setTimeout(() => {
-    //   setLoading(false)
-    // }, 5000)
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
   }, []);
 
   return (
-    <div className="h-full w-full overflow-hidden">
+    <div className="h-full w-full overflow-hidden block sm:hidden">
       {loading ? (
         <div className="h-screen flex justify-center items-center">
           <h1 className="font-bold text-5xl text-white text-center">
