@@ -36,15 +36,14 @@ function App() {
   }
 
   useEffect(() => {
-    startTimer();
-    return () => {
-      clearInterval(interval.current)
-    }
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 4000)
-    
+    startTimer();
+    return () => {
+      clearInterval(interval.current)
+    }
   }, [])
 
   return (
