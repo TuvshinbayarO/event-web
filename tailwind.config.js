@@ -7,7 +7,7 @@ module.exports = {
       },
       colors: {
         'green2' : '#2cdadd',
-        'dark': 'var( --e-global-color-82c5e99 )'
+        'dark': '#161947'
       }
     },
   },
