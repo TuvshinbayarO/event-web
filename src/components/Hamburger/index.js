@@ -22,8 +22,10 @@ export default function Hamburger() {
   ];
 
   return (
-    <div className="flex justify-between p-6 bg-gray-600">
-      <Logo size={"98px"} />
+    <div className="flex justify-between p-6 bg-dark">
+      <div className="bg-white p-5 rounded-full">
+        <Logo size={"68px"} />
+      </div>
       <Button type="open" show={show} handleShow={handleShow} />
 
       {/* SideBar */}
