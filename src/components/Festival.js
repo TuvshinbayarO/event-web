@@ -24,8 +24,8 @@ const Festival = () => {
             img: 'http://placeimg.com/800/1200/nature',
             title: 'Leadership digital',
             subTitle: 'Rometheme',
-            location: `${<FaMapMarkerAlt />} 99th, Qelilink Street`,
-            time: `${<FaClock />} 09:30Am - 10:30Am`
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         },
         {
             id: 2,
@@ -34,8 +34,8 @@ const Festival = () => {
             img: 'http://placeimg.com/800/1200/nature',
             title: 'Leadership digital',
             subTitle: 'Rometheme',
-            location: `${<FaMapMarkerAlt />} 99th, Qelilink Street`,
-            time: `${<FaClock />} 09:30Am - 10:30Am`
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         },
         {
             id: 3,
@@ -44,8 +44,8 @@ const Festival = () => {
             img: 'http://placeimg.com/800/1200/nature',
             title: 'Leadership digital',
             subTitle: 'Rometheme',
-            location: `${<FaMapMarkerAlt />} 99th, Qelilink Street`,
-            time: `${<FaClock />} 09:30Am - 10:30Am`
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         },{
             id: 4,
             tag: '5',
@@ -53,8 +53,8 @@ const Festival = () => {
             img: 'http://placeimg.com/800/1200/nature',
             title: 'Leadership digital',
             subTitle: 'Rometheme',
-            location: `${<FaMapMarkerAlt />} 99th, Qelilink Street`,
-            time: `${<FaClock />} 09:30Am - 10:30Am`
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         }
         ,{
             id: 5,
@@ -63,8 +63,8 @@ const Festival = () => {
             img: 'http://placeimg.com/800/1200/nature',
             title: 'Leadership digital',
             subTitle: 'Rometheme',
-            location: `${<FaMapMarkerAlt />} 99th, Qelilink Street`,
-            time: `${<FaClock />} 09:30Am - 10:30Am`
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         }
         ,{
             id: 6,
@@ -73,8 +73,8 @@ const Festival = () => {
             img: 'http://placeimg.com/800/1200/nature',
             title: 'Leadership digital',
             subTitle: 'Rometheme',
-            location: `${<FaMapMarkerAlt />} 99th, Qelilink Street`,
-            time: `${<FaClock />} 09:30Am - 10:30Am`
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         }
     ]
 
@@ -108,8 +108,8 @@ return (
                         <img onClick={() => openImageViewer(idx)} alt='photo' className='py-5 w-52' src={item.img} />
                         <h1 className='text-white font-bold text-4xl'>{item.title}</h1>
                         <p className='text-gray-400 font-semibold'>{item.subTitle}</p>
-                        <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'>{item.location}</div>
-                        <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'>{item.time}</div>
+                        {item.location}
+                        {item.time}
                     </div>
                 )
             })
