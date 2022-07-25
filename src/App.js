@@ -52,7 +52,7 @@ function App() {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="flex flex-col justify-center items-center h-full pt-52">
+              <div className="flex flex-col justify-center items-center text-center h-full pt-52">
                 <h1 className="font-semibold text-2xl text-white">
                   Mobi Festival 2022
                 </h1>
