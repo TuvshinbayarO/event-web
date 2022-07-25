@@ -105,7 +105,7 @@ return (
                                 <p>{item.subTag}</p>
                             </div>                
                         </div>
-                        <img onClick={() => openImageViewer(idx)} alt='photo' className='py-5 w-52' src={item.img} />
+                        <img onClick={() => openImageViewer(idx)} alt='photo' className='py-5 w-52 cursor-pointer' src={item.img} />
                         <h1 className='text-white font-bold text-4xl'>{item.title}</h1>
                         <p className='text-gray-400 font-semibold'>{item.subTitle}</p>
                         {item.location}

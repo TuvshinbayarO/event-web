@@ -6,27 +6,27 @@ const Zone = () => {
     const Data = [
         {
             id: 1,
-            tile: 'Workshop',
+            tile: 'Бөх барилдах',
             img: LandPhoto
         },
         {
             id: 2,
-            tile: 'Workshop',
+            tile: 'Electro Dance',
             img: LandPhoto
         },
         {
             id: 3,
-            tile: 'Workshop',
+            tile: 'Хоол',
             img: LandPhoto
         },
         {
             id: 4,
-            tile: 'Workshop',
+            tile: 'Group Stage',
             img: LandPhoto
         },
         {
             id: 5,
-            tile: 'Workshop',
+            tile: 'Морь уралдах',
             img: LandPhoto
         },
         {
@@ -41,8 +41,8 @@ const Zone = () => {
         <div className='rounded-full w-14 p-2 bg-pink-500 text-center flex justify-center items-center'>
             <h1 className='text-4xl text-white font-bold'>02</h1>
         </div>
-        <h1 className='text-red-500 text-4xl font-bold w-1/2 text-center'>Have <span className='text-white'>a nice for Weekend</span></h1>
-        <p className='text-gray-400 pt-2 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ea optio nemo adipisci laudantium assumenda cum fugiat ab voluptatibus cumque, sint soluta labore quae distinctio reprehenderit unde dolore. Veniam, sapiente.</p>
+        <h1 className='text-red-500 text-4xl font-bold w-1/2 text-center'>Division <span className='text-white'>Zone</span></h1>
+        <p className='text-gray-400 pt-2 font-semibold'>Ханаа юу байгааг илтгэх</p>
         <div className='flex flex-col justify-center items-center space-y-20 py-20 px-2'>
             {
                 Data.map((item, key) => {
