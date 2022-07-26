@@ -6,6 +6,7 @@ import CountDown from "./components/countDown";
 import Video from "./components/Video";
 import Zone from "./components/Zone";
 import Festival from "./components/Festival";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -65,6 +66,7 @@ function App() {
             <Video />
             <Zone />
             <Festival />
+            <Footer />
           </div>
         </>
       )}
