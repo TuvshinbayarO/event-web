@@ -97,7 +97,7 @@ return (
         <div className='rounded-full w-14 p-2 bg-pink-500 text-center flex justify-center items-center'>
             <h1 className='text-4xl text-white font-bold'>03</h1>
         </div>
-        <h1 className='text-red-500 text-4xl font-bold w-1/2 text-center'>Have <span className='text-white'>a nice for Weekend</span></h1>
+        <h1 className='text-red-500 text-4xl font-bold w-1/2 text-center'>Event <span className='text-white'>time</span></h1>
         <p className='text-gray-400 pt-2 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         {
            showMore ? Data.map((item, idx) => {
