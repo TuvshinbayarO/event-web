@@ -7,7 +7,8 @@ module.exports = {
       },
       colors: {
         'green2' : '#2cdadd',
-        'dark': '#161947'
+        'dark': '#161947',
+        'whites': '#f9f6ef'
       }
     },
   },
