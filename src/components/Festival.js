@@ -7,6 +7,10 @@ const Festival = () => {
 
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
+    const [showMore, setShowMore] = useState(false)
+
+    console.log('showmore', showMore)
+
     const images = [
         LandPhoto,
         LandPhoto,
@@ -96,24 +100,41 @@ return (
         <h1 className='text-red-500 text-4xl font-bold w-1/2 text-center'>Have <span className='text-white'>a nice for Weekend</span></h1>
         <p className='text-gray-400 pt-2 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         {
-            Data.map((item, idx) => {
+           showMore ? Data.map((item, idx) => {
                 return(
-                    <div key={idx} className='w-full flex flex-col justify-center items-center pt-14'>
+                     <div key={idx} className='w-full flex flex-col justify-center items-center pt-14'>
                         <div className='bg-red-500 w-[80%] rounded-lg'>
                             <div className='flex flex-col justify-center items-center text-white font-bold text-2xl'>
                                 <h1>{item.tag}</h1>
                                 <p>{item.subTag}</p>
                             </div>                
                         </div>
-                        <img onClick={() => openImageViewer(idx)} alt='photo' className='py-5 w-52 cursor-pointer' src={item.img} />
+                        <img onClick={() => openImageViewer(idx)} alt='festival' className='py-5 w-52 cursor-pointer' src={item.img} />
                         <h1 className='text-white font-bold text-4xl'>{item.title}</h1>
                         <p className='text-gray-400 font-semibold'>{item.subTitle}</p>
                         {item.location}
                         {item.time}
-                    </div>
+                    </div> 
                 )
+            }) : Data.map((item, idx) => {
+                return idx <= 2 && <div key={idx} className='w-full flex flex-col justify-center items-center pt-14'>
+                <div className='bg-red-500 w-[80%] rounded-lg'>
+                    <div className='flex flex-col justify-center items-center text-white font-bold text-2xl'>
+                        <h1>{item.tag}</h1>
+                        <p>{item.subTag}</p>
+                    </div>                
+                </div>
+                <img onClick={() => openImageViewer(idx)} alt='Festival' className='py-5 w-52 cursor-pointer' src={item.img} />
+                <h1 className='text-white font-bold text-4xl'>{item.title}</h1>
+                <p className='text-gray-400 font-semibold'>{item.subTitle}</p>
+                {item.location}
+                {item.time}
+            </div>
             })
         }
+
+        <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-5' onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+
         {isViewerOpen && (
             <ImageViewer
                 src={images}
