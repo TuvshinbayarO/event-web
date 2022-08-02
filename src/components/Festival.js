@@ -1,5 +1,5 @@
 import React, {useState, useCallback} from 'react'
-import LandPhoto from '../Assets/photo.jpg'
+// import LandPhoto from '../Assets/photo.jpg'
 import {FaMapMarkerAlt, FaClock} from 'react-icons/fa'
 import ImageViewer from 'react-simple-image-viewer';
 import Drink from '../Assets/DRINKS.png'
@@ -18,9 +18,9 @@ const Festival = () => {
         Warning,
         Drink,
         Food,
-        LandPhoto,
-        LandPhoto,
-        LandPhoto,
+        // LandPhoto,
+        // LandPhoto,
+        // LandPhoto,
     ];
 
     const Data = [
