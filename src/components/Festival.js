@@ -1,5 +1,4 @@
 import React, {useState, useCallback} from 'react'
-// import LandPhoto from '../Assets/photo.jpg'
 import {FaMapMarkerAlt, FaClock} from 'react-icons/fa'
 import ImageViewer from 'react-simple-image-viewer';
 import Drink from '../Assets/DRINKS.png'
@@ -18,9 +17,6 @@ const Festival = () => {
         Warning,
         Drink,
         Food,
-        // LandPhoto,
-        // LandPhoto,
-        // LandPhoto,
     ];
 
     const Data = [
@@ -122,7 +118,7 @@ return (
                         <p>{item.subTag}</p>
                     </div>                
                 </div>
-                <img onClick={() => openImageViewer(idx)} alt='Festival' className='py-5 w-52 cursor-pointer' src={item.img} />
+                <img onClick={() => openImageViewer(idx)} alt='Festival' className='py-5 px-2 cursor-pointer' src={item.img} />
             </div>
             })
         }
