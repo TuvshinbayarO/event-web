@@ -7,12 +7,12 @@ import Apple from '../Assets/Chrome.png'
 const OurCompany = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         fade: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         autoplay: true,
         autoplaySpeed: 2000,
       };
@@ -24,7 +24,7 @@ const OurCompany = () => {
                 <h1 className='text-4xl text-white font-bold'>06</h1>
             </div>
         </div>
-        <h1 className='text-red-500 text-4xl font-bold pt-2 flex justify-center items-center text-center pb-20'>Хамтрагч байгуулга</h1>
+        <h1 className='text-red-500 text-4xl font-bold pt-2 flex item justify-center items-center text-center pb-14'>Хамтрагч <span className='text-white'> байгуулга</span></h1>
         <Slider {...settings}>
             <div className="flex justify-center items-center">
                 <div className="flex justify-center items-center">
