@@ -1,5 +1,5 @@
 import React,{useState, useCallback} from 'react'
-import LandPhoto from '../Assets/zone.png'
+import LandPhoto from '../Assets/MAP.png'
 import ImageViewer from 'react-simple-image-viewer';
 
 const Zone = () => {
@@ -9,7 +9,7 @@ const Zone = () => {
     const [isViewerOpen, setIsViewerOpen] = useState(false);
  
     const images = [
-        LandPhoto,
+        LandPhoto
     ];
 
     const Data = [
