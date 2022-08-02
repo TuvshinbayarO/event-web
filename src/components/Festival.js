@@ -40,16 +40,16 @@ const Festival = () => {
             location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
             time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         },
-        {
-            id: 3,
-            tag: 'Хоол',
-            subTag : 'хоол',
-            img: Food,
-            title: 'Drinks',
-            subTitle: 'Rometheme',
-            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
-            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
-        },
+        // {
+        //     id: 3,
+        //     tag: 'Хоол',
+        //     subTag : 'хоол',
+        //     img: Food,
+        //     title: 'Drinks',
+        //     subTitle: 'Rometheme',
+        //     location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+        //     time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
+        // },
         // {
         //     id: 4,
         //     tag: '5',
