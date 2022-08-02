@@ -33,7 +33,7 @@ const Festival = () => {
         {
             id: 2,
             tag: 'Уух зүйл',
-            subTag : 'Food',
+            subTag : 'Уух зүйл',
             img: Drink,
             title: 'Leadership digital',
             subTitle: 'Rometheme',

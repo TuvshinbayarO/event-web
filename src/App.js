@@ -9,6 +9,7 @@ import Festival from "./components/Festival";
 import Footer from "./components/Footer";
 import Artist from "./components/Artist";
 import Map from "./components/Map";
+import OurCompany from "./components/OurCompany";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -69,6 +70,7 @@ function App() {
             <Zone />
             <Festival />
             <Artist />
+            <OurCompany />
             <Map />
             <Footer />
           </div>
