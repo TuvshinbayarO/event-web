@@ -4,6 +4,8 @@ import ImageViewer from 'react-simple-image-viewer';
 import Drink from '../Assets/DRINKS.png'
 import Food from '../Assets/FOOD.png'
 import Warning from '../Assets/Warning.png'
+import Agenda from '../Assets/AGENDA.png'
+import Emergency from '../Assets/EMERGENCY.png'
 
 const Festival = () => {
 
@@ -17,6 +19,9 @@ const Festival = () => {
         Warning,
         Drink,
         Food,
+        Agenda,
+        Emergency,
+
     ];
 
     const Data = [
@@ -40,36 +45,35 @@ const Festival = () => {
             location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
             time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
         },
-        // {
-        //     id: 3,
-        //     tag: 'Хоол',
-        //     subTag : 'хоол',
-        //     img: Food,
-        //     title: 'Drinks',
-        //     subTitle: 'Rometheme',
-        //     location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
-        //     time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
-        // },
-        // {
-        //     id: 4,
-        //     tag: '5',
-        //     subTag : 'Aug',
-        //     img: 'http://placeimg.com/800/1200/nature',
-        //     title: 'Leadership digital',
-        //     subTitle: 'Rometheme',
-        //     location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
-        //     time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
-        // }
-        // ,{
-        //     id: 5,
-        //     tag: '5',
-        //     subTag : 'Aug',
-        //     img: 'http://placeimg.com/800/1200/nature',
-        //     title: 'Leadership digital',
-        //     subTitle: 'Rometheme',
-        //     location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
-        //     time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
-        // }
+        {
+            id: 3,
+            tag: 'Хоол',
+            subTag : 'хоол',
+            img: Food,
+            title: 'Drinks',
+            subTitle: 'Rometheme',
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
+        },
+        {
+            id: 4,
+            subTag : 'Хөтөлбөр',
+            img: Agenda,
+            title: 'Leadership digital',
+            subTitle: 'Rometheme',
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
+        }
+        ,{
+            id: 5,
+            tag: '5',
+            subTag : 'Тусламж',
+            img: Emergency,
+            title: 'Leadership digital',
+            subTitle: 'Rometheme',
+            location: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaMapMarkerAlt /> 99th, Qelilink Street</div>,
+            time: <div className='text-gray-400 font-semibold flex justify-center items-center pt-5'><FaClock /> 09:30Am - 10:30Am</div>
+        }
         // ,{
         //     id: 6,
         //     tag: '5',
@@ -108,7 +112,7 @@ return (
                                 <p>{item.subTag}</p>
                             </div>                
                         </div>
-                        <img onClick={() => openImageViewer(idx)} alt='festival' className='py-5 w-52 cursor-pointer' src={item.img} />
+                        <img onClick={() => openImageViewer(idx)} alt='festival' className='py-5 px-2 cursor-pointer' src={item.img} />
                     </div> 
                 )
             }) : Data.map((item, idx) => {
@@ -123,7 +127,7 @@ return (
             })
         }
 
-        {/* <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-5' onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> */}
+        <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-5' onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
 
         {isViewerOpen && (
             <ImageViewer

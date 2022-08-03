@@ -2,7 +2,9 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Apple from '../Assets/Chrome.png'
+import Apple from '../Assets/apu.png'
+import Rock from '../Assets/4od.jpg'
+import Hook from '../Assets/hook.png'
 
 const OurCompany = () => {
 
@@ -27,35 +29,13 @@ const OurCompany = () => {
         <h1 className='text-red-500 text-4xl font-bold pt-2 flex item justify-center items-center text-center pb-14'>Хамтрагч <span className='text-white'> байгуулга</span></h1>
         <Slider {...settings}>
             <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center">
-                    <img alt="profile" className="w-32 rounded-full" src={Apple} />
+                <div className="flex justify-between items-center px-2">
+                    <img alt="profile" className=" w-24 rounded-full" src={Apple} />
+                    <img alt="profile" className=" w-24 rounded-full" src={Rock} />
+                    <img alt="profile" className=" w-24 rounded-full" src={Hook} />
                 </div>
             </div>
-            <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center">
-                    <img alt="profile" className="w-32 rounded-full" src={Apple} />
-                </div>
-            </div>
-            <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center">
-                    <img alt="profile" className="w-32 rounded-full" src={Apple} />
-                </div>
-            </div>
-            <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center">
-                    <img alt="profile" className="w-32 rounded-full" src={Apple} />
-                </div>
-            </div>
-            <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center">
-                    <img alt="profile" className="w-32 rounded-full" src={Apple} />
-                </div>
-            </div>
-            <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center">
-                    <img alt="profile" className="w-32 rounded-full" src={Apple} />
-                </div>
-            </div>
+            
         </Slider>
     </div>
   )

@@ -8,7 +8,7 @@ const Video = () => {
         </div>
         <h1 className='text-red-500 text-4xl font-bold text-center w-[60%]'>Mobi <span className='text-white'>festival intro</span></h1>
         <div className='pt-5 px-2'>
-          <iframe width="320" height="240" src="https://www.youtube.com/embed/8G_ORAIztU4?list=TLGGMfBJMdiTVMAwMTA4MjAyMg" title="Mobi festival last" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="330" height="240" src="https://www.youtube.com/embed/8G_ORAIztU4?list=TLGGMfBJMdiTVMAwMzA4MjAyMg" title="Mobi festival last" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
   )

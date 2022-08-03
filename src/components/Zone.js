@@ -1,5 +1,5 @@
 import React,{useState, useCallback} from 'react'
-import LandPhoto from '../Assets/MAP.png'
+import LandPhoto from '../Assets/map.png'
 import ImageViewer from 'react-simple-image-viewer';
 
 const Zone = () => {

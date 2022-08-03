@@ -23,7 +23,7 @@ export default function Hamburger() {
 
   return (
     <div className="flex justify-between p-6 bg-dark">
-      <div className="bg-white p-5 rounded-full">
+      <div className="">
         <Logo size={"68px"} />
       </div>
       <Button type="open" show={show} handleShow={handleShow} />
